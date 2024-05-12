@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="mostaza">#FFDB58</color>
+    <color name="chocolate">#592E0B</color>
+    <color name="cian_oscuro">#008B8B</color>
+    <color name="contraste">#c8c8a9</color>
+    <color name="negro_no">#273142</color>
+    <color name="fondo_res">#f7efd8</color>
+    <color name="text_res">#556270</color>
+
+
+
+
+
+</resources>

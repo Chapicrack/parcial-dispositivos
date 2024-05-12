@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">parcial dispositivos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bienvenido">Bienvenido al cuestonario de league of legends</string>
+    <string name="instrucciones">¡Bienvenido al cuestionario del lore de League of Legends! Sumérgete en las profundidades de Runaterra y descubre los secretos que esconde este fascinante universo. ¿Listo para explorar las leyendas y mitos que dan forma a este mundo? ¡Que empiece la aventura!</string>
+</resources>
