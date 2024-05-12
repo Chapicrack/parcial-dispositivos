@@ -63,5 +63,32 @@
         android:id="@+id/respuesta3"
         android:name="com.example.parcialdispositivos.respuesta3"
         android:label="fragment_respuesta3"
-        tools:layout="@layout/fragment_respuesta3" />
+        tools:layout="@layout/fragment_respuesta3" >
+        <action
+            android:id="@+id/action_respuesta3_to_pregunta4"
+            app:destination="@id/pregunta4" />
+    </fragment>
+    <fragment
+        android:id="@+id/pregunta4"
+        android:name="com.example.parcialdispositivos.pregunta4"
+        android:label="fragment_pregunta4"
+        tools:layout="@layout/fragment_pregunta4" >
+        <action
+            android:id="@+id/action_pregunta4_to_respuesta4"
+            app:destination="@id/respuesta4" />
+    </fragment>
+    <fragment
+        android:id="@+id/respuesta4"
+        android:name="com.example.parcialdispositivos.respuesta4"
+        android:label="fragment_respuesta4"
+        tools:layout="@layout/fragment_respuesta4" >
+        <action
+            android:id="@+id/action_respuesta4_to_pregunta5"
+            app:destination="@id/pregunta5" />
+    </fragment>
+    <fragment
+        android:id="@+id/pregunta5"
+        android:name="com.example.parcialdispositivos.pregunta5"
+        android:label="fragment_pregunta5"
+        tools:layout="@layout/fragment_pregunta5" />
 </navigation>
