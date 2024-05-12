@@ -18,5 +18,23 @@
         android:id="@+id/questionFragment"
         android:name="com.example.parcialdispositivos.QuestionFragment"
         android:label="fragment_question"
-        tools:layout="@layout/fragment_question" />
+        tools:layout="@layout/fragment_question" >
+        <action
+            android:id="@+id/action_questionFragment_to_answerFragment"
+            app:destination="@id/answerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/answerFragment"
+        android:name="com.example.parcialdispositivos.AnswerFragment"
+        android:label="fragment_answer"
+        tools:layout="@layout/fragment_answer" >
+        <action
+            android:id="@+id/action_answerFragment_to_pregunta2"
+            app:destination="@id/pregunta2" />
+    </fragment>
+    <fragment
+        android:id="@+id/pregunta2"
+        android:name="com.example.parcialdispositivos.pregunta2"
+        android:label="fragment_pregunta2"
+        tools:layout="@layout/fragment_pregunta2" />
 </navigation>
