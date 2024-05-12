@@ -20,6 +20,7 @@ class pregunta3 : Fragment(R.layout.fragment_pregunta3) {
         arguments.let { bundle ->
             score=bundle?.getInt("score").toString().toInt()
         }
+        //otorgando valores de button a botoncitos como val
         val botoncito1=view.findViewById<Button>(R.id.button17)
         val botoncito2=view.findViewById<Button>(R.id.button16)
         val botoncito3=view.findViewById<Button>(R.id.button15)
@@ -38,12 +39,13 @@ class pregunta3 : Fragment(R.layout.fragment_pregunta3) {
             navegar(correcta,view)
         }
     }
+    //funcion para que se pase la informacion entre los fragmentos
     private fun navegar(correcta: String, view: View) {
         val datos= bundleOf("score" to score,"correcta" to correcta)
         view.findNavController().navigate(R.id.action_pregunta3_to_respuesta3,datos)
 
     }
-
+    //comprobador de respuesta correcta
     private fun respuesta(i: Int) :String{
         if(i==3){
             return "okey"

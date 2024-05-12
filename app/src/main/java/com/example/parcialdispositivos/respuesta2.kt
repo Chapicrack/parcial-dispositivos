@@ -36,6 +36,7 @@ class respuesta2 : Fragment(R.layout.fragment_respuesta2) {
         }
 
     }
+    //funcion para que se pase la informacion entre los fragmentos
     private fun navegar(score: Int, view: View) {
         val datos= bundleOf("score" to score)
         view.findNavController().navigate(R.id.action_respuesta2_to_pregunta3,datos)
