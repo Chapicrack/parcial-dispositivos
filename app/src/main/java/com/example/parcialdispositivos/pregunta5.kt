@@ -5,17 +5,50 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.core.os.bundleOf
+import androidx.navigation.findNavController
 
 class pregunta5 : Fragment(R.layout.fragment_pregunta5) {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
+    var score=0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        arguments.let { bundle ->
+            score=bundle?.getInt("score").toString().toInt()
+        }
+        val botoncito1=view.findViewById<Button>(R.id.button53)
+        val botoncito2=view.findViewById<Button>(R.id.button54)
+        val botoncito3=view.findViewById<Button>(R.id.button55)
+        var correcta=""
+        botoncito1.setOnClickListener{
+            correcta= respuesta(3)
+            val datos= bundleOf("score" to score,"correcta" to correcta)
+            view.findNavController().navigate(R.id.action_questionFragment_to_answerFragment,datos)
+        }
+        botoncito2.setOnClickListener{
+            correcta= respuesta(2)
+            navegar(correcta,view)
+        }
+        botoncito3.setOnClickListener{
+            correcta= respuesta(1)
+            navegar(correcta,view)
+        }
+    }
+    private fun navegar(correcta: String, view: View) {
+        val datos= bundleOf("score" to score,"correcta" to correcta)
+        view.findNavController().navigate(R.id.action_pregunta5_to_respuesta5,datos)
+
+    }
+    private fun respuesta(i: Int) :String{
+        if(i==3){
+            return "okey"
+        }
+        else{
+            return "no okey"
+        }
     }
 
 }

@@ -90,5 +90,14 @@
         android:id="@+id/pregunta5"
         android:name="com.example.parcialdispositivos.pregunta5"
         android:label="fragment_pregunta5"
-        tools:layout="@layout/fragment_pregunta5" />
+        tools:layout="@layout/fragment_pregunta5" >
+        <action
+            android:id="@+id/action_pregunta5_to_respuesta5"
+            app:destination="@id/respuesta5" />
+    </fragment>
+    <fragment
+        android:id="@+id/respuesta5"
+        android:name="com.example.parcialdispositivos.respuesta5"
+        android:label="fragment_respuesta5"
+        tools:layout="@layout/fragment_respuesta5" />
 </navigation>

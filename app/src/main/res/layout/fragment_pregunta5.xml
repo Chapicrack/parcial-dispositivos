@@ -10,22 +10,22 @@
 
 
     <ImageView
-        android:id="@+id/imageView41"
+        android:id="@+id/imageView51"
         android:layout_width="362dp"
         android:layout_height="280dp"
-        android:src="@drawable/kayn"
+        android:src="@drawable/kindred"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView42"
+        android:id="@+id/textView52"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="¿Qué son los darkin?"
+        android:text="¿Quién representa la muerte en runaterra?"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView41"
+        app:layout_constraintTop_toBottomOf="@+id/imageView51"
         android:textColor="@color/contraste"
         android:layout_margin="20dp"
         android:textSize="22sp"
@@ -33,11 +33,11 @@
         />
 
     <Button
-        android:id="@+id/button43"
+        android:id="@+id/button53"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="a)Aspectos"
-        app:layout_constraintBottom_toTopOf="@+id/button44"
+        android:text="a)Kindred"
+        app:layout_constraintBottom_toTopOf="@+id/button54"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginBottom="30dp"
@@ -47,11 +47,11 @@
         />
 
     <Button
-        android:id="@+id/button44"
+        android:id="@+id/button54"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="b)Semidioses"
-        app:layout_constraintBottom_toTopOf="@+id/button45"
+        android:text="b)El vacío"
+        app:layout_constraintBottom_toTopOf="@+id/button55"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginBottom="30dp"
@@ -61,10 +61,10 @@
         />
 
     <Button
-        android:id="@+id/button45"
+        android:id="@+id/button55"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="c)Ascendidos"
+        android:text="c)La Muerte"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
