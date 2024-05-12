@@ -26,8 +26,7 @@ class pregunta5 : Fragment(R.layout.fragment_pregunta5) {
         var correcta=""
         botoncito1.setOnClickListener{
             correcta= respuesta(3)
-            val datos= bundleOf("score" to score,"correcta" to correcta)
-            view.findNavController().navigate(R.id.action_questionFragment_to_answerFragment,datos)
+            navegar(correcta,view)
         }
         botoncito2.setOnClickListener{
             correcta= respuesta(2)
